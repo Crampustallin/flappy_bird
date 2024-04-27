@@ -78,8 +78,7 @@ func (g *Game) handleMovement() {
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyL) {
 		g.player.Move(move)
-	}
-	if ebiten.IsKeyPressed(ebiten.KeyH) {
+	} else if ebiten.IsKeyPressed(ebiten.KeyH) {
 		g.player.Move(-move)
 	}
 }
